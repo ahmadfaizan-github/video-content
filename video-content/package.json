@@ -1,0 +1,29 @@
+{
+  "name": "nln-youtube-content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "remotion preview src/index.ts",
+    "render": "remotion render src/index.ts --codec h264 --crf 18 --color-space bt709",
+    "render:001": "remotion render src/index.ts 001-pumpfun-sniping out/001-pumpfun-sniping.mp4 --codec h264 --crf 18 --color-space bt709",
+    "render:002": "remotion render src/index.ts 002-yellowstone-grpc out/002-yellowstone-grpc.mp4 --codec h264 --crf 18 --color-space bt709",
+    "render:003": "remotion render src/index.ts 003-websocket-subscriptions out/003-websocket-subscriptions.mp4 --codec h264 --crf 18 --color-space bt709",
+    "render:004": "remotion render src/index.ts 004-solana-rpc-methods out/004-solana-rpc-methods.mp4 --codec h264 --crf 18 --color-space bt709"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.446",
+    "@remotion/google-fonts": "^4.0.446",
+    "@remotion/player": "^4.0.446",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.446",
+    "typescript": "^6.0.2"
+  }
+}
